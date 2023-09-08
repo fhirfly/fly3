@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "content-hash": "^2.5.2",
+    "did-resolver": "^4.1.0",
+    "ens-did-resolver": "^1.0.4",
+    "ethers": "^6.7.1"
+  }
+}
