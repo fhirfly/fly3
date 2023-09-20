@@ -4,14 +4,9 @@
   "verificationMethod": [
     {
       "id": "did:health:123456789abcdefghi#keys-1",
-      "type": "LITMPC",
+      "type": "EcdsaSecp256k1RecoveryMethod2020",
       "controller": "did:health:123456789abcdefghi",
       "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV",
-      "thresholdRequirement": {
-        "threshold": "2/3",
-        "keyCount": 5,
-        "requiredKeys": 3
-      },
       "threshold": {
         "n": 5,
         "t": 3
@@ -33,13 +28,12 @@
   "keyAgreement": [
     {
       "id": "did:health:123456789abcdefghi#keys-2",
-      "type": "LITMPC",
+      "type": "EcdsaSecp256k1RecoveryMethod2020",
       "controller": "did:health:123456789abcdefghi",
       "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV".
-      "thresholdRequirement": {
-        "threshold": "2/3",
-        "keyCount": 5,
-        "requiredKeys": 3
+      "threshold": {
+        "n": 5,
+        "t": 3
       }
     }
   ],
