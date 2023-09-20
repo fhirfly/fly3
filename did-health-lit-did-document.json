@@ -1,0 +1,50 @@
+{
+  "@context": "https://www.w3.org/ns/did/v1",
+  "id": "did:health:123456789abcdefghi",
+  "verificationMethod": [
+    {
+      "id": "did:health:123456789abcdefghi#keys-1",
+      "type": "LITMPC",
+      "controller": "did:health:123456789abcdefghi",
+      "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV",
+      "thresholdRequirement": {
+        "threshold": "2/3",
+        "keyCount": 5,
+        "requiredKeys": 3
+      }
+    }
+  ],
+  "authentication": [
+    "did:health:123456789abcdefghi#keys-1"
+  ],
+  "assertionMethod": [
+    "did:health:123456789abcdefghi#keys-1"
+  ],
+  "capabilityInvocation": [
+    "did:health:123456789abcdefghi#keys-1"
+  ],
+  "capabilityDelegation": [
+    "did:health:123456789abcdefghi#keys-1"
+  ],
+  "keyAgreement": [
+    {
+      "id": "did:health:123456789abcdefghi#keys-2",
+      "type": "LITMPC",
+      "controller": "did:health:123456789abcdefghi",
+      "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV".
+      "thresholdRequirement": {
+        "threshold": "2/3",
+        "keyCount": 5,
+        "requiredKeys": 3
+      }
+    }
+  ],
+  "service": [
+    {
+      "id": "did:health:123456789abcdefghi#medical-records",
+      "type": "SecureMedicalRecordsStore",
+      "serviceEndpoint": "ipfs://QmV9tSDx9UiPeWExXEeH6aoDvmihvx6jD5eLb4jbTaKGps",
+      "description": "Access to the medical records secured by LIT Protocol and stored on IPFS."
+    }
+  ]
+}
