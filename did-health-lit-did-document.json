@@ -11,6 +11,10 @@
         "threshold": "2/3",
         "keyCount": 5,
         "requiredKeys": 3
+      },
+      "threshold": {
+        "n": 5,
+        "t": 3
       }
     }
   ],
