@@ -44,7 +44,7 @@
             "identifier": [
               {
                 "system": "https://www.w3.org/ns/did",
-                "value": "did:health:02123x:receiver-practitioner"
+                "value": "did:health:02123xreceiver-practitioner"
               }
             ]
           }
