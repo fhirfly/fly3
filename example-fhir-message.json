@@ -34,7 +34,7 @@
             "identifier": [
               {
                 "system": "https://www.w3.org/ns/did",
-                "value": "did:health:<chainid>:sender-practitioner"
+                "value": "did:health:0x3214sender-practitioner"
               }
             ]
           },
@@ -44,7 +44,7 @@
             "identifier": [
               {
                 "system": "https://www.w3.org/ns/did",
-                "value": "did:health:<chainid>:receiver-practitioner"
+                "value": "did:health:02123x:receiver-practitioner"
               }
             ]
           }
