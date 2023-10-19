@@ -12,10 +12,10 @@
     ],
     "when": "2023-09-29T00:00:00Z",
     "who": {
-      "reference": "#sender-practitioner"
+      "reference": "#sender-person"
     },
     "onBehalfOf": {
-      "reference": "#receiver-practitioner"
+      "reference": "#receiver-person"
     },
     "targetFormat": "application/fhir+json",
     "sigFormat": "application/signature+json",
@@ -29,22 +29,22 @@
         "id": "message-header-id",
         "contained": [
           {
-            "resourceType": "Practitioner",
-            "id": "sender-practitioner",
+            "resourceType": "Person",
+            "id": "sender-person",
             "identifier": [
               {
                 "system": "https://www.w3.org/ns/did",
-                "value": "did:health:0x3214sender-practitioner"
+                "value": "did:health:0x3214sender"
               }
             ]
           },
           {
-            "resourceType": "Practitioner",
-            "id": "receiver-practitioner",
+            "resourceType": "Person",
+            "id": "receiver-person",
             "identifier": [
               {
                 "system": "https://www.w3.org/ns/did",
-                "value": "did:health:02123xreceiver-practitioner"
+                "value": "did:health:02123xreceiver"
               }
             ]
           }
@@ -54,10 +54,10 @@
           "code": "practitioner-notification"
         },
         "sender": {
-          "reference": "#sender-practitioner"
+          "reference": "#sender-person"
         },
         "receiver": {
-          "reference": "#receiver-practitioner"
+          "reference": "#receiver-person"
         }
       }
     },
@@ -67,6 +67,7 @@
         "resourceType": "Communication",
         "id": "communication-id",
         "status": "completed",
+        "topic": [{"text": "Colonoscopy Report"}],
         "content": [
           {
             "contentString": "I have a patient that I am going to refer to you for a colonoscopy."
